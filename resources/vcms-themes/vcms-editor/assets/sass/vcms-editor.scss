@@ -1,0 +1,20 @@
+/// @author Alex Antonides <{@link http://www.alex-antonides.com/}>
+/// @license     {@link https://opensource.org/licenses/MIT}
+/// @ignore
+
+/// ##
+/// === Helpers ===
+/// ##
+@import '../../../vcms-general/assets/sass/helpers/math';
+@import '../../../vcms-general/assets/sass/helpers/mixins';
+@import '../../../vcms-general/assets/sass/helpers/variables';
+
+/// ##
+/// === Pages ===
+/// ##
+@import 'pages/page';
+
+/// ##
+/// === Components ===
+/// ##
+@import 'components/sidebar';

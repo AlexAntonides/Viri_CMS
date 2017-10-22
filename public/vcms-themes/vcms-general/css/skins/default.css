@@ -1,0 +1,136 @@
+#vcms-adminbar * {
+  color: white;
+}
+
+#vcms-adminbar #vcms-navbar {
+  background-color: #3498db;
+}
+
+#vcms-adminbar .navbar-nav > li > .dropdown-menu {
+  border-color: #EEEEEE;
+}
+
+#vcms-adminbar .navbar-nav .open > a,
+#vcms-adminbar .navbar-nav .open > a:focus,
+#vcms-adminbar .navbar-nav .open > a:hover,
+#vcms-adminbar .navbar-nav > li > a:focus,
+#vcms-adminbar .navbar-nav > li > a:hover {
+  color: #F6F6F6;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#vcms-adminbar .navbar-nav > .messages-menu > .dropdown-menu > .content > .menu > li > a > h4 {
+  color: #444444;
+}
+
+#vcms-adminbar .navbar-nav > .messages-menu > .dropdown-menu > .content > .menu > li > a > h4 > small {
+  color: #999999;
+}
+
+#vcms-adminbar .navbar-nav > .messages-menu > .dropdown-menu > .content > .menu > li > a > h4 > small > i {
+  color: #999999;
+}
+
+#vcms-adminbar .navbar-nav > .messages-menu > .dropdown-menu > .content > .menu > li > a > p {
+  color: #888888;
+}
+
+#vcms-adminbar .navbar-nav > .notifications-menu > .dropdown-menu > .content > .menu > li > a {
+  color: #444444;
+}
+
+#vcms-adminbar .navbar-nav > .tasks-menu > .dropdown-menu > .content > .menu > li > a > h3 {
+  color: #666666;
+}
+
+#vcms-adminbar .navbar-nav > .tasks-menu > .dropdown-menu > .content > .menu > li > a > h3 > small {
+  color: #777777;
+}
+
+#vcms-adminbar .navbar-nav > .user-menu > .dropdown-menu > .user-header {
+  background-color: #3c8dbc;
+}
+
+#vcms-adminbar .navbar-nav > .user-menu > .dropdown-menu > .user-header > img {
+  border-color: transparent;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+#vcms-adminbar .navbar-nav > .user-menu > .dropdown-menu > .user-header > p {
+  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#vcms-adminbar .navbar-nav > .user-menu > .dropdown-menu > .user-content {
+  border-top-color: #DDDDDD;
+  border-bottom-color: #F4F4F4;
+}
+
+#vcms-adminbar .navbar-nav > .user-menu > .dropdown-menu > .user-content a {
+  color: #444444 !important;
+}
+
+#vcms-adminbar .navbar-nav > .user-menu > .dropdown-menu > .user-footer {
+  background-color: #F9F9F9;
+}
+
+#vcms-adminbar .navbar-nav > .user-menu > .dropdown-menu > .user-footer .btn-default {
+  color: #666666;
+  background-color: #F4F4F4;
+  border-color: #DDDDDD;
+}
+
+#vcms-adminbar .navbar-nav > .user-menu > .dropdown-menu > .user-footer .btn-default:active,
+#vcms-adminbar .navbar-nav > .user-menu > .dropdown-menu > .user-footer .btn-default:focus,
+#vcms-adminbar .navbar-nav > .user-menu > .dropdown-menu > .user-footer .btn-default:hover {
+  background-color: #D4D4D4;
+  border-color: #8C8C8C;
+  color: #333333;
+}
+
+#vcms-adminbar .navbar-nav > .user-menu > .dropdown-menu > .user-footer:before,
+#vcms-adminbar .navbar-nav > .user-menu > .dropdown-menu > .user-footer:after {
+  content: " ";
+  display: table;
+}
+
+#vcms-adminbar .navbar-nav > .user-menu > .dropdown-menu > .user-footer:after {
+  clear: both;
+}
+
+#vcms-adminbar .navbar-nav > .messages-menu > .dropdown-menu > .header,
+#vcms-adminbar .navbar-nav > .notifications-menu > .dropdown-menu > .header,
+#vcms-adminbar .navbar-nav .tasks-menu > .dropdown-menu > .header {
+  color: #444444;
+  background-color: #FFFFFF;
+  border-color: #F4F4F4;
+}
+
+#vcms-adminbar .navbar-nav > .messages-menu > .dropdown-menu > .content > .menu > li > a,
+#vcms-adminbar .navbar-nav > .notifications-menu > .dropdown-menu > .content > .menu > li > a,
+#vcms-adminbar .navbar-nav .tasks-menu > .dropdown-menu > .content > .menu > li > a {
+  border-color: #F4F4F4;
+}
+
+#vcms-adminbar .navbar-nav > .messages-menu > .dropdown-menu > .content > .menu > li > a:hover,
+#vcms-adminbar .navbar-nav > .notifications-menu > .dropdown-menu > .content > .menu > li > a:hover,
+#vcms-adminbar .navbar-nav .tasks-menu > .dropdown-menu > .content > .menu > li > a:hover {
+  background-color: #F4F4F4;
+}
+
+#vcms-adminbar .navbar-nav > .messages-menu > .dropdown-menu > .footer a,
+#vcms-adminbar .navbar-nav > .notifications-menu > .dropdown-menu > .footer a,
+#vcms-adminbar .navbar-nav .tasks-menu > .dropdown-menu > .footer a {
+  color: #444444;
+  border-color: #eeeeee;
+  background-color: #FFFFFF;
+}
+
+#vcms-adminbar .navbar-header {
+  background-color: #2980b9;
+}
+
+#vcms-adminbar .navbar-header:hover {
+  background-color: #20638f;
+}
+

@@ -1,0 +1,157 @@
+/// @author Alex Antonides <{@link http://www.alex-antonides.com/}>
+/// @license     {@link https://opensource.org/licenses/MIT}
+/// @ignore
+
+/// ##
+/// === Helpers ===
+/// ##
+@import '../helpers/variables';
+
+/// ##
+/// === Editor-Bar Default Theme ===
+/// ##    
+
+#vcms-adminbar {
+
+    * {
+        color: white;
+    }
+
+    #vcms-navbar {
+        background-color: $peter-river;
+    }
+
+    .navbar-nav {
+
+        > li > .dropdown-menu {
+            border-color: #EEEEEE;
+        }
+
+        .open > a, .open > a:focus, .open > a:hover, > li > a:focus, > li > a:hover {
+            color: #F6F6F6;
+            background-color: rgba( 0, 0, 0, 0.1 );
+        }
+
+        > .messages-menu > .dropdown-menu > .content > .menu > li > a {
+            
+            > h4 {
+                color: #444444;
+
+                > small {
+                    color: #999999;
+
+                    > i {
+                        color: #999999;
+                    }
+                }
+            }
+
+            > p {
+                color: #888888;
+            }
+        }
+
+        > .notifications-menu > .dropdown-menu > .content > .menu > li > a { 
+            color: #444444;
+        }
+
+        > .tasks-menu > .dropdown-menu > .content > .menu > li > a { 
+
+            > h3 {
+                color: #666666;
+
+                > small {
+                    color: #777777;
+                }
+            }
+        }
+
+        > .user-menu > .dropdown-menu {
+            > .user-header {
+                background-color: #3c8dbc;
+
+                > img {
+                    border-color: transparent;
+                    border-color: rgba( 255, 255, 255, 0.2 );
+                }
+
+                > p {
+                    color: #FFFFFF;
+                    color: rgba( 255, 255, 255, 0.8 );
+                }
+            }
+
+            > .user-content {
+                border-top-color: #DDDDDD;
+                border-bottom-color: #F4F4F4;
+
+                a {
+                    color: #444444 !important;
+                }
+            }
+
+            > .user-footer {
+                background-color: #F9F9F9;
+
+                .btn-default {
+                    color: #666666;
+                    background-color: #F4F4F4;
+                    border-color: #DDDDDD;
+
+                    &:active, &:focus, &:hover {
+                        background-color: #D4D4D4;
+                        border-color: #8C8C8C;
+                        color: #333333;
+                    }
+                }
+
+                &:before, &:after {
+                    content: " ";
+                    display: table;
+                }
+
+                &:after {
+                    clear: both;
+                }
+            }
+        }
+
+        > .messages-menu, > .notifications-menu, .tasks-menu {
+
+            > .dropdown-menu {
+                       
+                > .header {
+                    color: #444444;
+                    background-color: #FFFFFF;
+                    border-color: #F4F4F4;
+                }
+
+                > .content {
+                    > .menu > li > a {
+                        border-color: #F4F4F4;
+
+                        &:hover {
+                            background-color: #F4F4F4;
+                        }
+                    }
+                }
+
+                > .footer {
+                    a {
+                        color: #444444;
+                        border-color: #eeeeee;
+                        background-color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-header {
+        background-color: $belize-hole;
+
+        &:hover {
+            background-color: darken( $belize-hole, 10% );
+        }
+    }
+}

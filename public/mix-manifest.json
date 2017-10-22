@@ -1,0 +1,9 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/vcms-themes/vcms-general/css/components/editor-bar.css": "/vcms-themes/vcms-general/css/components/editor-bar.css",
+    "/vcms-themes/vcms-general/css/skins/default.css": "/vcms-themes/vcms-general/css/skins/default.css",
+    "/vcms-themes/vcms-editor/css/vcms-editor.css": "/vcms-themes/vcms-editor/css/vcms-editor.css",
+    "/vcms-themes/vcms-editor/css/skins/default.css": "/vcms-themes/vcms-editor/css/skins/default.css",
+    "/vcms-themes/vcms-editor/css/pages/loginpage.css": "/vcms-themes/vcms-editor/css/pages/loginpage.css"
+}

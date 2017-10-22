@@ -1,0 +1,340 @@
+.vcms-bar {
+  min-height: 50px;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 1000;
+}
+
+.vcms-bar a {
+  text-decoration: none;
+}
+
+.vcms-bar .logo {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px;
+  float: left;
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: width, 0.3s, ease-in-out;
+  transition: width, 0.3s, ease-in-out;
+}
+
+.vcms-bar .navigation-bar {
+  max-height: 50px;
+  position: relative;
+  z-index: 1000;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  -webkit-transition: width, 0.3s, ease-in-out;
+  transition: width, 0.3s, ease-in-out;
+}
+
+.vcms-bar .dropdown-menu {
+  position: absolute;
+  right: 0;
+  left: auto;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.v-nav > li {
+  position: relative;
+}
+
+.v-nav > li > a {
+  position: relative;
+  display: block;
+  padding: 15px 15px;
+}
+
+.v-nav > li > a > .v-label {
+  top: 9px;
+  right: 7px;
+  padding: 2px 3px;
+  position: absolute;
+  text-align: center;
+  font-size: 9px;
+  line-height: 8.1px;
+}
+
+.v-nav > li > a:hover {
+  background-color: #307096;
+}
+
+.v-nav > li .bar-user-image {
+  float: left;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+
+.v-nav .user-information .user-name {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.dropdown-menu {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #eeeeee;
+  position: absolute;
+  right: 0;
+  left: auto;
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42;
+  color: #333;
+  white-space: nowrap;
+}
+
+.dropdown-toggle i {
+  font-size: 14px;
+}
+
+.messages .dropdown-menu,
+.notifications .dropdown-menu,
+.tasks .dropdown-menu,
+.user-information .dropdown-menu {
+  width: 280px;
+  padding: 0 0 0 0;
+  margin: 0;
+  top: 100%;
+}
+
+.messages .dropdown-menu li,
+.notifications .dropdown-menu li,
+.tasks .dropdown-menu li,
+.user-information .dropdown-menu li {
+  position: relative;
+}
+
+.messages .dropdown-menu > .header,
+.notifications .dropdown-menu > .header,
+.tasks .dropdown-menu > .header,
+.user-information .dropdown-menu > .header {
+  background-color: #FFFFFF;
+  padding: 7px 10px;
+  font-size: 14px;
+  color: #444444;
+  border-bottom: 1px solid #F4F4F4;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.messages .dropdown-menu > .user-header,
+.notifications .dropdown-menu > .user-header,
+.tasks .dropdown-menu > .user-header,
+.user-information .dropdown-menu > .user-header {
+  height: 175px;
+  padding: 10px;
+  text-align: center;
+}
+
+.messages .dropdown-menu > .user-header > img,
+.notifications .dropdown-menu > .user-header > img,
+.tasks .dropdown-menu > .user-header > img,
+.user-information .dropdown-menu > .user-header > img {
+  z-index: 5;
+  border: 3px solid;
+  border-color: transparent;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.messages .dropdown-menu > .user-header > p,
+.notifications .dropdown-menu > .user-header > p,
+.tasks .dropdown-menu > .user-header > p,
+.user-information .dropdown-menu > .user-header > p {
+  z-index: 5;
+  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.messages .dropdown-menu > .user-header > p > small,
+.notifications .dropdown-menu > .user-header > p > small,
+.tasks .dropdown-menu > .user-header > p > small,
+.user-information .dropdown-menu > .user-header > p > small {
+  display: block;
+  font-size: 12px;
+}
+
+.messages .dropdown-menu .inner-menu,
+.notifications .dropdown-menu .inner-menu,
+.tasks .dropdown-menu .inner-menu,
+.user-information .dropdown-menu .inner-menu {
+  max-height: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+.messages .dropdown-menu .inner-menu a,
+.notifications .dropdown-menu .inner-menu a,
+.tasks .dropdown-menu .inner-menu a,
+.user-information .dropdown-menu .inner-menu a {
+  display: block;
+  white-space: nowrap;
+  border-bottom: 1px solid #F4F4F4;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.messages .dropdown-menu .inner-menu a:hover,
+.notifications .dropdown-menu .inner-menu a:hover,
+.tasks .dropdown-menu .inner-menu a:hover,
+.user-information .dropdown-menu .inner-menu a:hover {
+  background-color: #F4F4F4;
+  text-decoration: none;
+}
+
+.messages .dropdown-menu .inner-menu .notification-notification > a,
+.notifications .dropdown-menu .inner-menu .notification-notification > a,
+.tasks .dropdown-menu .inner-menu .notification-notification > a,
+.user-information .dropdown-menu .inner-menu .notification-notification > a {
+  color: #444444;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px;
+}
+
+.messages .dropdown-menu .inner-menu .notification-notification > a .fa,
+.notifications .dropdown-menu .inner-menu .notification-notification > a .fa,
+.tasks .dropdown-menu .inner-menu .notification-notification > a .fa,
+.user-information .dropdown-menu .inner-menu .notification-notification > a .fa {
+  width: 20px;
+}
+
+.messages .dropdown-menu .inner-menu .task-notification > a,
+.notifications .dropdown-menu .inner-menu .task-notification > a,
+.tasks .dropdown-menu .inner-menu .task-notification > a,
+.user-information .dropdown-menu .inner-menu .task-notification > a {
+  padding: 10px;
+}
+
+.messages .dropdown-menu .inner-menu .task-notification > a h3,
+.notifications .dropdown-menu .inner-menu .task-notification > a h3,
+.tasks .dropdown-menu .inner-menu .task-notification > a h3,
+.user-information .dropdown-menu .inner-menu .task-notification > a h3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  padding: 0;
+  margin: 0 0 10px 0;
+  color: #666666;
+}
+
+.messages .dropdown-menu .inner-menu .task-notification > a h3 > small,
+.notifications .dropdown-menu .inner-menu .task-notification > a h3 > small,
+.tasks .dropdown-menu .inner-menu .task-notification > a h3 > small,
+.user-information .dropdown-menu .inner-menu .task-notification > a h3 > small {
+  font-size: 65%;
+  font-weight: 400;
+  line-height: 1;
+  color: #777777;
+}
+
+.messages .dropdown-menu .inner-menu .message-notification > a,
+.notifications .dropdown-menu .inner-menu .message-notification > a,
+.tasks .dropdown-menu .inner-menu .message-notification > a,
+.user-information .dropdown-menu .inner-menu .message-notification > a {
+  margin: 0;
+  padding: 10px 10px;
+}
+
+.messages .dropdown-menu .inner-menu .message-notification > a:before,
+.notifications .dropdown-menu .inner-menu .message-notification > a:before,
+.tasks .dropdown-menu .inner-menu .message-notification > a:before,
+.user-information .dropdown-menu .inner-menu .message-notification > a:before {
+  content: " ";
+  display: table;
+}
+
+.messages .dropdown-menu .inner-menu .message-notification > a:after,
+.notifications .dropdown-menu .inner-menu .message-notification > a:after,
+.tasks .dropdown-menu .inner-menu .message-notification > a:after,
+.user-information .dropdown-menu .inner-menu .message-notification > a:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.messages .dropdown-menu .inner-menu .message-notification > a > div > img,
+.notifications .dropdown-menu .inner-menu .message-notification > a > div > img,
+.tasks .dropdown-menu .inner-menu .message-notification > a > div > img,
+.user-information .dropdown-menu .inner-menu .message-notification > a > div > img {
+  margin: auto 10px auto auto;
+  vertical-align: middle;
+}
+
+.messages .dropdown-menu .inner-menu .message-notification > a > h4,
+.notifications .dropdown-menu .inner-menu .message-notification > a > h4,
+.tasks .dropdown-menu .inner-menu .message-notification > a > h4,
+.user-information .dropdown-menu .inner-menu .message-notification > a > h4 {
+  padding: 0;
+  margin: 0 0 0 45px;
+  color: #444444;
+  font-size: 14px;
+  position: relative;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.messages .dropdown-menu .inner-menu .message-notification > a > h4 > small,
+.notifications .dropdown-menu .inner-menu .message-notification > a > h4 > small,
+.tasks .dropdown-menu .inner-menu .message-notification > a > h4 > small,
+.user-information .dropdown-menu .inner-menu .message-notification > a > h4 > small {
+  color: #999999;
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.messages .dropdown-menu .inner-menu .message-notification > a > p,
+.notifications .dropdown-menu .inner-menu .message-notification > a > p,
+.tasks .dropdown-menu .inner-menu .message-notification > a > p,
+.user-information .dropdown-menu .inner-menu .message-notification > a > p {
+  margin: 0 0 0 45px;
+  font-size: 12px;
+  color: #888888;
+}
+
+.messages .dropdown-menu > .footer > a,
+.notifications .dropdown-menu > .footer > a,
+.tasks .dropdown-menu > .footer > a,
+.user-information .dropdown-menu > .footer > a {
+  background-color: #FFFFFF;
+  padding: 7px 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #444444;
+  border-bottom: 1px solid #eeeeee;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.messages .dropdown-menu > .user-footer,
+.notifications .dropdown-menu > .user-footer,
+.tasks .dropdown-menu > .user-footer,
+.user-information .dropdown-menu > .user-footer {
+  padding: 10px;
+}
+
