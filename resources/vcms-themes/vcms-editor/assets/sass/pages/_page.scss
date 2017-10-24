@@ -8,7 +8,6 @@
 
 .content {
     margin-left: $sidebar-width; 
-    @include transition( transform .3s ease-in-out, margin .3s ease-in-out );
 
     > .header {
         position: relative;
@@ -72,4 +71,22 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+
+    @include media-breakpoint-max( xs ) {
+        margin-left: 0;
+    }
+    @include transition( transform .3s ease-in-out, margin .3s ease-in-out );
+}
+
+.main-footer {
+    padding: 15px;
+    border-top: 1px solid;
+
+    margin-left: $sidebar-width; 
+    z-index: 820;
+    
+    @include media-breakpoint-max( xs ) {
+        margin-left: 0;
+    }
+    @include transition( transform .3s ease-in-out, margin .3s ease-in-out );
 }

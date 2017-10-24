@@ -12,7 +12,7 @@
     @parent
 @endsection
 
-@section('content')
+@section('body')
     <div class="container">
         <form class="form-signin" action="{{ url('/') . '/' . $page->route . '/request' }}" method="post">
             <h2 class="form-signin-heading">Please sign in</h2>

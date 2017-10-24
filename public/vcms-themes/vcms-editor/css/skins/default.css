@@ -1,3 +1,9 @@
+.main-footer {
+  color: #444444;
+  border-color: #D2D6DE;
+  background-color: #FFFFFF;
+}
+
 #vcms-sidebar {
   background-color: #222d32;
 }
@@ -9,6 +15,11 @@
 #vcms-sidebar .sidebar > footer {
   color: white;
   background-color: #374b5e;
+}
+
+#vcms-sidebar .sidebar > footer a {
+  color: white;
+  text-decoration: none;
 }
 
 #vcms-sidebar form {

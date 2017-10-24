@@ -19,9 +19,6 @@ class PagesManager {
         $raw = DB::select($query, [ $page->id ]);
 
         $page->SetMeta($raw);
-
-        //if ( isset($page->action) ) return redirect()->action( $page->action, [ 'theme' => $page, 'theme_path' => $theme_path ] );
-        //else return view( $theme_path . $page->view, [ 'theme' => $page, 'theme_path' => $theme_path ] );
     }   
 
     private function _parse_data( $data ) {

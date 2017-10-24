@@ -1,17 +1,10 @@
 @section('head')
-    @require( 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Source+Sans+Pro.css' ) 
-
-    @require( asset('/plugins/css/css-reset.css') )
-    @require( asset('/plugins/css/normalize.min.css') )
-    @require( asset('/plugins/css/font-awesome.min.css') )
-    @require( asset('/plugins/css/bootstrap.min.css') )
-
-    @require( asset('/vcms-themes/vcms-editor/css/vcms-editor.css') )
-    @require( asset('/vcms-themes/vcms-editor/css/skins/default.css') )
-    @require( asset('/vcms-themes/vcms-general/css/skins/default.css') )
-
     @parent
 @endsection
+
+<?php
+    $curRouteName = Request::route()->getName();
+?>
 
 <aside id="vcms-sidebar" class="hidden-xs">
     <section class="sidebar">
@@ -36,11 +29,11 @@
                 </span>
             </div>
         </form>
-
+        
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li class="menu-item active">
-                <a href="#">
+            <li class="menu-item {{ ($curRouteName == 'vcms-dashboard') ? 'active' : '' }}">
+                <a href="{{ route('vcms-dashboard') }}">
                     <i class="fa fa-dashboard" aria-hidden="true">
                         <b class="b-dashboard"></b>
                     </i>
@@ -50,8 +43,8 @@
                     </div>
                 </a>
             </li>
-            <li class="menu-item">
-                <a href="#">
+            <li class="menu-item {{ ($curRouteName == 'vcms-pages') ? 'active' : '' }}">
+                <a href="{{ route('vcms-pages') }}">
                     <i class="fa fa-file" aria-hidden="true">
                         <b class="b-pages"></b>
                     </i>
@@ -61,8 +54,8 @@
                     </div>
                 </a>
             </li>
-            <li class="menu-item">
-                <a href="#">
+            <li class="menu-item {{ ($curRouteName == 'vcms-media') ? 'active' : '' }}">
+                <a href="{{ route('vcms-media') }}">
                     <i class="fa fa-camera" aria-hidden="true">
                         <b class="b-media"></b>
                     </i>
@@ -72,19 +65,19 @@
                     </div>
                 </a>
             </li>
-            <li class="menu-item">
-                <a href="#">
+            <li class="menu-item {{ ($curRouteName == 'vcms-anchors') ? 'active' : '' }}">
+                <a href="{{ route('vcms-anchors') }}">
                     <i class="fa fa-link" aria-hidden="true">
                         <b class="b-links"></b>
                     </i>
-                    <span>Links</span>
+                    <span>Anchors</span>
                     <div class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>    
                     </div>
                 </a>
             </li>
-            <li class="menu-item">
-                <a href="#">
+            <li class="menu-item {{ ($curRouteName == 'vcms-messages') ? 'active' : '' }}">
+                <a href="{{ route('vcms-messages') }}">
                     <i class="fa fa-comments" aria-hidden="true">
                         <b class="b-messages"></b> 
                     </i>
@@ -94,8 +87,8 @@
                     </div>
                 </a>
             </li>
-            <li class="menu-item">
-                <a href="#">
+            <li class="menu-item {{ ($curRouteName == 'vcms-appearance') ? 'active' : '' }}">
+                <a href="{{ route('vcms-appearance') }}">
                     <i class="fa fa-paint-brush" aria-hidden="true">
                         <b class="b-appearance"></b>
                     </i>
@@ -105,8 +98,8 @@
                     </div>
                 </a>
             </li>
-            <li class="menu-item">
-                <a href="#">
+            <li class="menu-item {{ ($curRouteName == 'vcms-themes') ? 'active' : '' }}">
+                <a href="{{ route('vcms-themes') }}">
                     <i class="fa fa-wrench" aria-hidden="true">
                         <b class="b-themes"></b>
                     </i>
@@ -116,8 +109,8 @@
                     </div>
                 </a>
             </li>
-            <li class="menu-item">
-                <a href="#">
+            <li class="menu-item {{ ($curRouteName == 'vcms-users') ? 'active' : '' }}">
+                <a href="{{ route('vcms-users') }}">
                     <i class="fa fa-user" aria-hidden="true">
                         <b class="b-users"></b>
                     </i>
@@ -127,8 +120,8 @@
                     </div>
                 </a>
             </li>
-            <li class="menu-item">
-                <a href="#">
+            <li class="menu-item {{ ($curRouteName == 'vcms-settings') ? 'active' : '' }}">
+                <a href="{{ route('vcms-settings') }}">
                     <i class="fa fa-cogs" aria-hidden="true">
                         <b class="b-settings"></b>
                     </i>
@@ -141,7 +134,7 @@
         </ul>
         
         <footer>
-            <p> &copy; Your Company Name - {{ "Date" }} </p>
+            <p> &copy; <a href="#">Your Company Name</a> - {{ date("Y") }} </p>
         </footer>
     </section>  
 </aside>

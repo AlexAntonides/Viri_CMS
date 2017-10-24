@@ -180,7 +180,7 @@ return [
         /*
          * ViriCMS
           */ 
-          App\Providers\VcmsServiceProvider::class,
+        App\Providers\VcmsServiceProvider::class,
     ],
 
     /*

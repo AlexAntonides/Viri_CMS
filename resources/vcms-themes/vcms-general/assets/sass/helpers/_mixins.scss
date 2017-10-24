@@ -80,3 +80,54 @@
     -moz-box-shadow:  $shadow;
     box-shadow:  $shadow;
 }
+
+/// ##
+/// — Media Queries —
+/// ##
+
+@function media-get-next($key, $list: $screen-types) {
+  $names: map-keys($list);
+  $next: index($names, $key);
+  @return if($next < length($names), nth($names, $next + 1), null);
+}
+
+@function media-get-min($key, $list: $screen-types) {
+  $min: map-get($list, $key);
+  @return if($min != 0, $min, null);
+}
+
+@function media-get-max($key, $list: $screen-types) {
+  $max: media-get-next($key, $list);
+  @return if($max, media-get-min($max, $list) - 1px, null);
+}
+
+@mixin media-breakpoint-min($key, $list: $screen-types) {
+  $min: media-get-min($key, $list);
+  @if $min {
+      @media (min-width: $min) {
+          @content;
+      }
+  } @else {
+      @content;
+  }
+}
+
+@mixin media-breakpoint-between($lower, $upper, $list: $screen-types) {
+  $min: media-get-min($lower, $list);
+  $max: media-get-min($upper, $list);
+
+  @media (min-width: $min) and (max-width: $max) {
+      @content;
+  }
+}
+
+@mixin media-breakpoint-max($key, $list: $screen-types) {
+  $max: media-get-max($key, $list);
+  @if $max {
+      @media (max-width: $max) {
+          @content;
+      }
+  } @else {
+      @content;
+  }
+}

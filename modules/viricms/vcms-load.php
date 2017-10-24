@@ -19,6 +19,7 @@ if ( !isset($viricms_loaded) ) {
     include( __DIR__ . "/app/models/vcms-page.php" );
 
     include( __DIR__ . "/app/managers/vcms-pagesmanager.php" );
+    include( __DIR__ . "/app/managers/vcms-usersmanager.php" );
 
     include( __DIR__ . "/app/controllers/vcms-authcontroller.php" );
     include( __DIR__ . "/app/controllers/vcms-pagecontroller.php" );

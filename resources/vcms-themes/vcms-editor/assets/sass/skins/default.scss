@@ -8,6 +8,16 @@
 @import '../../../../vcms-general/assets/sass/helpers/variables';
 
 /// ##
+/// === Page Default Theme ===
+/// ##    
+
+.main-footer {
+    color: #444444;
+    border-color: #D2D6DE;
+    background-color: #FFFFFF;
+}
+
+/// ##
 /// === Editor-Bar Default Theme ===
 /// ##    
 
@@ -21,6 +31,11 @@
     .sidebar > footer {
         color: white;
         background-color: #374b5e;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
     }
 
     form {

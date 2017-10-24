@@ -16,11 +16,20 @@
 
         <title>ViriCMS Editor</title>
 
+        @require( 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Source+Sans+Pro.css' ) 
+        
         @require( asset('/plugins/css/css-reset.css') )
+        @require( asset('/plugins/css/normalize.min.css') )
+        @require( asset('/plugins/css/font-awesome.min.css') )
+        @require( asset('/plugins/css/bootstrap.min.css') )
+
+        @require( asset('/vcms-themes/vcms-editor/css/vcms-editor.css') )
+        @require( asset('/vcms-themes/vcms-editor/css/skins/default.css') )
         
+        @require( asset('/vcms-themes/vcms-general/css/components/editor-bar.css') )
+        @require( asset('/vcms-themes/vcms-general/css/skins/default.css') )
+
         @yield('head')
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
 
     <body>

@@ -1,14 +1,4 @@
 @section('head')
-        @require( 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Source+Sans+Pro.css' ) 
-
-        @require( asset('/plugins/css/css-reset.css') )
-        @require( asset('/plugins/css/normalize.min.css') )
-        @require( asset('/plugins/css/font-awesome.min.css') )
-        @require( asset('/plugins/css/bootstrap.min.css') )
-
-        @require( asset('/vcms-themes/vcms-general/css/components/editor-bar.css') )
-        @require( asset('/vcms-themes/vcms-general/css/skins/default.css') )
-
         @parent
 @endsection
 
@@ -17,9 +7,13 @@
                 <div class="container-fluid">
                         <div class="row">
                                 <div class="navbar-header">
-                                        <a class="navbar-brand" href="#">
+                                        <a class="navbar-brand" href="{{ route('vcms-dashboard') }}">
                                                 <b>Viri</b>CMD
                                         </a>
+                                </div>
+
+                                <div class="left-nav pull-left">
+                                        @yield('adminbar.leftnav')
                                 </div>
 
                                 <div id="vcms-navbar" class="collapse navbar-collapse">
@@ -31,11 +25,11 @@
                                                                         <span class="label label-success">{{ 4 }}</span>
                                                                 </a>
                                                                 <ul class="dropdown-menu">
-                                                                        <li class="header">
+                                                                        <li class="menu-header">
                                                                                 You have {{ 4 }} messages
                                                                         </li>
 
-                                                                        <li class="content">
+                                                                        <li class="menu-content">
                                                                                 <ul class="menu">
                                                                                         @for ($i = 0; $i < 4; $i++)
                                                                                                 <li>
@@ -62,7 +56,7 @@
                                                                                 </ul>
                                                                         </li>
 
-                                                                        <li class="footer">
+                                                                        <li class="menu-footer">
                                                                                 <a href="#">
                                                                                         See All Messages
                                                                                 </a>
@@ -75,11 +69,11 @@
                                                                         <span class="label label-warning">{{ 10 }}</span>
                                                                 </a>
                                                                 <ul class="dropdown-menu">
-                                                                        <li class="header">
+                                                                        <li class="menu-header">
                                                                                 You have {{ 10 }} notifications
                                                                         </li>
 
-                                                                        <li class="content">
+                                                                        <li class="menu-content">
                                                                                 <ul class="menu">
                                                                                         @for ($i = 0; $i < 10; $i++)
                                                                                                 <li>
@@ -92,7 +86,7 @@
                                                                                 </ul>
                                                                         </li>
 
-                                                                        <li class="footer">
+                                                                        <li class="menu-footer">
                                                                                 <a href="#">
                                                                                         View all
                                                                                 </a>
@@ -105,11 +99,11 @@
                                                                         <span class="label label-danger">{{ 9 }}</span>
                                                                 </a>    
                                                                 <ul class="dropdown-menu">
-                                                                        <li class="header">
+                                                                        <li class="menu-header">
                                                                                 You have {{ 9 }} tasks
                                                                         </li>
 
-                                                                        <li class="content">
+                                                                        <li class="menu-content">
                                                                                 <ul class="menu">
                                                                                         @for ($i = 0; $i < 9; $i++)
                                                                                                 <li>
@@ -129,7 +123,7 @@
                                                                                 </ul>
                                                                         </li>
 
-                                                                        <li class="footer">
+                                                                        <li class="menu-footer">
                                                                                 <a href="#">
                                                                                         View All Tasks
                                                                                 </a>
@@ -168,7 +162,7 @@
 
                                                                         <li class="user-footer">
                                                                                 <div class="pull-left">
-                                                                                        <a class="btn btn-default" href="#">Profile</a>
+                                                                                        <a class="btn btn-default" href="{{ route('vcms-userprofile', [ 'id' => Auth::user()->id ]) }}">Profile</a>
                                                                                 </div>
                                                                                 <div class="pull-right">
                                                                                         <a class="btn btn-default" href="#">Sign out</a>
