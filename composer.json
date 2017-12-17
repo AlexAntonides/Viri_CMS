@@ -1,3 +1,8 @@
 {
-    "name": "alexantonides/viricms"
+    "name": "alexantonides/viricms",
+    "autoload": {
+        "psr-0": {
+            "alexantonides\\viricms\\modules"   :   "modules"
+        }
+    }
 }
