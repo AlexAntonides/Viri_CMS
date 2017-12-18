@@ -1,8 +1,27 @@
 {
     "name": "alexantonides/viricms",
+    "description": "Content Management System for Laravel",
+    "keywords": [
+        "laravel",
+        "cms",
+        "content",
+        "management",
+        "system"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0.0"
+    },
     "autoload": {
         "psr-4": {
             "alexantonides\\viricms\\modules"   :   "modules"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "alexantonides\\viricms\\modules\\app\\providers"
+            ]
         }
     }
 }

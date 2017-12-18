@@ -11,3 +11,7 @@ for ( $i = 0; $i < $len; $i++ ) {
     $route = Route::match( [ $page->route_type ], $page->path, [ 'uses' => $page->action, 'page' => $page ] )->name( $page->route );
     if ( isset($page->middleware) && $page->middleware != '' ) $route->middleware( $page->middleware );
 }
+
+Route::get('test', function () {
+    return "Test";
+});
