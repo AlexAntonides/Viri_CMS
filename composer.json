@@ -14,13 +14,15 @@
     },
     "autoload": {
         "psr-4": {
-            "alexantonides\\viricms\\modules"   :   "modules"
+            "AlexAntonides\\ViriCMS\\"  :   "src/",
+            "AlexAntonides\\ViriCMS\\Managers\\"  :   "src/modules/app/managers/",
+            "AlexAntonides\\ViriCMS\\Controllers\\"  :   "src/modules/app/controllers/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "alexantonides\\viricms\\modules\\app\\providers"
+                "AlexAntonides\\ViriCMS\\Providers\\ServiceProvider"
             ]
         }
     }

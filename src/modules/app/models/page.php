@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace AlexAntonides\ViriCMS\Models;
 
 class Page {
 

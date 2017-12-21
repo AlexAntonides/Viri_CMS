@@ -1,4 +1,4 @@
-<?php namespace App\Http\Controllers;
+<?php namespace AlexAntonides\ViriCMS\Controllers;
 
 use Hash;
 use Redirect;
@@ -13,7 +13,7 @@ use IlluminateFoundationAuthAccessAuthorizesResources;
 use IlluminateHtmlHtmlServiceProvider;
 use Illuminate\Http\Request;
 
-class AuthController extends Controller {
+class AuthController extends \App\Http\Controllers\Controller {
     
     public function ShowLogin( Request $request ) {
         $page = $request->route()->getAction()['page'];

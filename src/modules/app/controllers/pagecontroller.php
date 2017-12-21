@@ -1,9 +1,9 @@
-<?php namespace App\Http\Controllers;
+<?php namespace AlexAntonides\ViriCMS\Controllers;
 
 use Illuminate\Http\Request;
 use App\Managers\UsersManager;
 
-class PageController extends Controller {
+class PageController extends \App\Http\Controllers\Controller {
     
     public function ShowPage( Request $request ) {
         $page = $request->route()->getAction()['page'];

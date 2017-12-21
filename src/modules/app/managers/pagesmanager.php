@@ -1,7 +1,7 @@
-<?php namespace App\Managers;
+<?php namespace AlexAntonides\ViriCMS\Managers;
 
 use DB;
-use App\Models\Page;
+use AlexAntonides\ViriCMS\Models\Page;
 
 class PagesManager {
     
