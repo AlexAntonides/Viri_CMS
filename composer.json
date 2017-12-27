@@ -14,9 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AlexAntonides\\ViriCMS\\"  :   "src/",
-            "AlexAntonides\\ViriCMS\\Managers\\"  :   "src/modules/app/managers/",
-            "AlexAntonides\\ViriCMS\\Controllers\\"  :   "src/modules/app/controllers/"
+            "AlexAntonides\\ViriCMS\\"  :   "src/"
         }
     },
     "extra": {

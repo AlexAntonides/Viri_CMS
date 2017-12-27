@@ -23,7 +23,7 @@ class AuthController extends \App\Http\Controllers\Controller {
             return redirect()->route('vcms-editor');
             //return view( $theme_path . 'home', [ 'page' => $page, 'theme_path' => $theme_path ] );
         } else {
-            return view( $theme_path . $page->view, [ 'page' => $page, 'theme_path' => $theme_path ] );
+            return view( $page->view, [ 'page' => $page, 'theme_path' => $theme_path ] );
         }
     }
 

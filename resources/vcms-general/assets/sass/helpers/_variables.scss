@@ -1,0 +1,111 @@
+/// @author Alex Antonides <{@link http://www.alex-antonides.com/}>
+/// @license     {@link https://github.com/AlexAntonides/Viri_UI/blob/master/LICENSE}
+/// @ignore
+
+/// ##
+/// === Variables ===
+/// ##       
+
+$adminbar-height: 50px;
+
+$sidebar-width: 230px;
+$usermenu-width: 280px;
+
+
+/// ##
+/// — Colors —
+/// ## 
+
+// Color Swatches
+// From http://flatuicolors.com/
+
+$turquoise:                 #1abc9c;
+$green-sea:                 #16a085;
+
+$emerald:                   #2ecc71;
+$nephritis:                 #27ae60;
+
+$peter-river:               #3498db;
+$belize-hole:               #2980b9;
+
+$amethyst:                  #9b59b6;
+$wisteria:                  #8e44ad;
+
+$wet-asphalt:               #34495e;
+$midnight-blue:             #2c3e50;
+
+$sun-flower:                #f1c40f;
+$orange:                    #f39c12;
+
+$carrot:                    #e67e22;
+$pumpkin:                   #d35400;
+
+$alizarin:                  #e74c3c;
+$pomegranate:               #c0392b;
+
+$clouds:                    #ecf0f1;
+$silver:                    #bdc3c7;
+
+$concrete:                  #95a5a6;
+$asbestos:                  #7f8c8d;
+
+// ##
+// — Media Sizes —
+// ##
+
+$screen-types: (
+    // ------ Extra Small Devices, Phones ------ //
+    xs: 480px,
+
+    // ------ Small Devices, Tablets ------ //
+    sm: 768px,
+
+    // ------ Medium Devices, Desktops ------ //
+    md: 992px,
+
+    // ------ Large Devices, Wide Screens ------ //
+    lg: 1200px
+);
+
+/// ##
+/// — Media Types —
+/// ##
+
+// ------ Used for all media type devices ------ //
+$all: 'all';
+
+// ------ Used for speech and sound synthesizers ------ //
+$aural: 'aural';
+$only-aural: 'only aural';
+
+// ------ Used for braille tactile feedback devices ------ //
+$braille: 'braille';
+$only-braille: 'only braille';
+
+// ------ Used for paged braille printers ------ //
+$embossed: 'embossed';
+$only-embossed: 'only embossed';
+
+// ------ Used for small or handheld devices ------ //
+$handheld: 'handheld';
+$only-handheld: 'only handheld';
+
+// ------ Used for printers ------ //
+$print: 'print';
+$only-print: 'only print';
+
+// ------ Used for projected presentations, like slides ------ //
+$projection: 'projection';
+$only-projection: 'only projection';
+
+// ------ Used for computer screens ------ //
+$screen: 'screen';
+$only-screen: 'only screen';
+
+// ------ Used for media using a fixed-pitch character grid, like teletypes and terminals ------ //
+$tty: 'tty';
+$only-tty: 'only tty';
+
+// ------ Used for television-type devices ------ //
+$tv: 'tv';
+$only-tv: 'only tv';

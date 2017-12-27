@@ -1,0 +1,246 @@
+/// @author Alex Antonides <{@link http://www.alex-antonides.com/}>
+/// @license     {@link https://opensource.org/licenses/MIT}
+/// @ignore
+
+/// ##
+/// === Helpers ===
+/// ##
+@import '../helpers/variables';
+@import '../helpers/math';
+@import '../helpers/mixins';
+
+/// ##
+/// === Editor-Bar ===
+/// ##    
+
+#vcms-adminbar {
+    max-height: $adminbar-height;
+    position: relative;
+    z-index: 1030;
+
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
+    > nav {
+        border: 0;
+    }
+
+    .navbar-header > .navbar-brand {
+        min-width: $sidebar-width;
+        width: 100%;    /* For XS mode */
+        
+        margin: 0;
+        text-align: center;
+    }
+
+    .left-nav {
+        
+        > a {
+            float: left;
+            padding: 15px 15px;
+        }
+    }
+    
+    .navbar-nav {
+        
+        > li {
+            > .dropdown-menu {
+                position: absolute;
+                left: auto;
+                right: 0;
+
+                box-shadow: none;
+            }
+
+            > a > .label {
+                top: 9px;
+                right: 7px;
+
+                text-align: center;
+                font-size: 9px;
+
+                padding: 2px 3px;
+                position: absolute;
+
+                line-height: 8.1px;
+            }
+        }
+
+        > .messages-menu > .dropdown-menu > .menu-content > .menu > li > a {
+            margin: 0;
+            padding: 10px 10px;
+
+            > div > img {
+                margin: auto 10px auto auto;
+            }
+
+            > h4 {
+                padding: 0;
+                margin: 0 0 0 45px;
+                font-size: 15px;
+                position: relative;
+
+                > small {
+                    top: 0;
+                    right: 0;
+                    font-size: 10px;
+                    position: absolute;
+                }
+            }
+
+            > p {
+                margin: 0 0 0 45px;
+                font-size: 12px;
+            }
+
+            &:before,
+            &:after {
+                content: " ";
+                display: table;
+            }
+        
+            &:after {
+                clear: both;
+            }
+        }
+
+        > .notifications-menu > .dropdown-menu > .menu-content > .menu > li > a {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 10px;
+
+            > .glyphicon, > .fa, > .ion {
+                width: 20px;
+            }
+        } 
+
+        > .tasks-menu> .dropdown-menu > .menu-content > .menu > li > a {
+            padding: 10px;
+
+            > h3 {
+                font-size: 14px;
+                padding: 0;
+                margin: 0 0 10px 0;
+            }
+
+            > .progress {
+                height: 7px;
+
+                padding: 0;
+                margin: 0;
+
+                border-radius: 1px;
+                @include box-shadow( none );
+            }
+        }
+            
+        > .user-menu {
+
+            .user-image {
+                float: left;
+            
+                margin-right: 10px;
+                margin-top: -2px;
+            }   
+
+            > .dropdown-menu {
+                width: $usermenu-width;
+                border-top-width: 0;
+                
+                padding: 0 0 0 0;
+
+                > .user-header {
+                    height: 175px;
+                    padding: 10px;
+                    text-align: center;
+
+                    > img {
+                        z-index: 5;
+                        border: 3px solid;
+                    }
+
+                    > p {
+                        z-index: 5;
+                        font-size: 17px;
+                        margin-top: 10px;
+
+                        > small {
+                            display: block;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                > .user-content {
+                    padding: 15px;
+
+                    border-top: 1px solid;
+                    border-bottom: 1px solid;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+
+                > .user-footer {
+                    padding: 10px;
+
+                    .btn-flat {
+                        border: 1px solid;
+                        border-radius: none;
+                        @include box-shadow( none );
+                    }
+                }
+            }
+        }
+
+        > .messages-menu, > .notifications-menu, .tasks-menu {
+
+            > .dropdown-menu {
+                width: 280px;
+                
+                > .menu-header {
+                    border-top-left-radius: 4px;
+                    border-top-right-radius: 4px;
+
+                    padding: 7px 10px;
+                    border-bottom: 1px solid;
+
+                    font-size: 14px;
+                }
+
+                 > .menu-content {
+                    
+                    > .menu {
+                        max-height: 200px;
+                        overflow-x: hidden;
+                        
+                        >li {
+                            > a {
+                                display: block;
+                                white-space: nowrap;
+                                border-bottom: 1px solid;
+                                
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                > .menu-footer {
+                    > a {
+                        border-bottom-left-radius: 4px;
+                        border-bottom-right-radius: 4px;
+
+                        padding: 7px 10px;
+                        border-bottom: 1px solid;
+
+                        text-align: center;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

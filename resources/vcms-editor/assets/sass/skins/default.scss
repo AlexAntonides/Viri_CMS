@@ -1,0 +1,132 @@
+/// @author Alex Antonides <{@link http://www.alex-antonides.com/}>
+/// @license     {@link https://opensource.org/licenses/MIT}
+/// @ignore
+
+/// ##
+/// === Helpers ===
+/// ##
+@import '../../../../vcms-general/assets/sass/helpers/variables';
+
+/// ##
+/// === Page Default Theme ===
+/// ##    
+
+.main-footer {
+    color: #444444;
+    border-color: #D2D6DE;
+    background-color: #FFFFFF;
+}
+
+/// ##
+/// === Editor-Bar Default Theme ===
+/// ##    
+
+#vcms-sidebar {
+    background-color: #222d32;
+
+    .sidebar > header {
+        color: white;
+    }
+
+    .sidebar > footer {
+        color: white;
+        background-color: #374b5e;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    form {
+        border-color: #374850;
+        
+        input[type="text"]  {
+            &:focus, &:focus + .input-group-btn .btn {
+                background-color: white;
+                color: #666666;
+                outline: 0;
+            }
+        }
+
+        button[type="submit"] {
+            &:focus {
+                outline: 0;
+            }
+
+            &:active {
+                background-color: white;
+            }
+
+        }
+
+        input[type="text"], button[type="submit"] {
+            color: #999999;
+            background-color: #374850;
+            border-color: transparent;
+        }
+    }
+
+    .sidebar-menu {
+
+        > li {
+            color: #4b646f;
+
+            > a {
+                color: #b8c7ce;
+
+                &:active, &:hover {
+                    color: #FFFFFF;
+                    background-color: #1e282c;
+                }
+
+                > i {
+                    > .b-dashboard {
+                        background-color: $pomegranate;
+                    }
+
+                    > .b-pages {
+                        background-color: $pumpkin;
+                    }
+
+                    > .b-media {
+                        background-color: $orange;
+                    }
+
+                    > .b-links {
+                        background-color: $sun-flower;
+                    }
+
+                    > .b-messages {
+                        background-color: $nephritis;
+                    }
+
+                    > .b-appearance {
+                        background-color: $turquoise;
+                    }
+
+                    > .b-themes {
+                        background-color: $belize-hole;
+                    }
+                
+                    > .b-users {
+                        background-color: $amethyst;
+                    }
+
+                    > .b-settings {
+                        background-color: $wisteria;
+                    }
+                }
+            }
+        }
+
+        .active > a {
+            color: #FFFFFF;
+            background-color: #1e282c;
+        }
+
+        > .header {
+            background-color: #1a2226;
+        }
+    }
+}
